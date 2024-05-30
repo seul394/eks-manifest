@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: blog-frontend
-          image: ${{ secrets.AWS_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/blog-frontend:latest
+          image: 341931614219.dkr.ecr.ap-northeast-2.amazonaws.com/blog-frontend:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
