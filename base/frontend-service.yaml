@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: demo-frontend
+  name: blog-frontend
   namespace: blog-app
   annotations:
     alb.ingress.kubernetes.io/healthcheck-path: "/"
 spec:
   selector:
-    app: demo-frontend
+    app: blog-frontend
   type: LoadBalancer
   ports:
     - protocol: TCP
