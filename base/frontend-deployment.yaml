@@ -18,6 +18,6 @@ spec:
           image: 341931614219.dkr.ecr.ap-northeast-2.amazonaws.com/blog-frontend:9a945b37
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 3000
       imagePullSecrets:
         - name: blog-frontend
