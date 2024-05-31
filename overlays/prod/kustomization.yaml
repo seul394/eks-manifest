@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+images:
+- name: 341931614219.dkr.ecr.ap-northeast-2.amazonaws.com/blog-frontend:latest
+  newTag: dev
+
+secretGenerator:
+  - name: blog-frontend
+    namespace: blog-app
+    literals:
+      - AWS_ACCESS_KEY_ID=new_access_key
+      - AWS_SECRET_ACCESS_KEY=new_secret_key
+      - AWS_DEFAULT_REGION=ap-northeast-2
+
+resources:
+- ../../base
