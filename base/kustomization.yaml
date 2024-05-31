@@ -4,4 +4,3 @@ namespace: blog-app
 resources:
   - frontend-deployment.yaml
   - frontend-service.yaml
-  - fronten-secret.yaml
